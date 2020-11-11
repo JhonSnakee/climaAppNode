@@ -6,7 +6,7 @@ const axios = require('axios');
 const getLugarLatLng = async(dir) => {
 
     const encodedUrl = encodeURI(dir);
-    const key = 'AIzaSyAZaQLwRHFIs6LjRCNth9JrChlIodXRsNA';
+    const key = '*****************************************';
     const resp = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodedUrl}&key=${key}`);
 
     if (resp.data.results.length === 0){
